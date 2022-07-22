@@ -11,11 +11,30 @@ outDir เป็นโฟล์เดอร์ที่จะเก็บ file j
 removeComments จะลบ comment ที่เราเคยใส่ไว้ใน typescript ออกจากไฟล์ js หลังจากที่ compile แล้ว
 noEmitOnError จะไม่ compile js ถ้าเกิดว่ามี error
 sourceMap หลังจาก compile ts -> js จะทำการสร้างไฟ .js.map (ไม่ต้องอ่านข้างในไฟล์ ใช้สำหรับ debug)
-
-
+noImplicitAny ถ้าเป็น false ตัว compiler จะไม่เช็ค any type ให้
+noUnusedParameters ตัว compiler จะเตือนว่ามีตัวแปรไหนไม่ได้ใช้บ้าง
+noImplicitReturns ตัวนี้จะแจ้งเตือนถ้าใน function ไม่มี default return
+noUnusedLocals ตัวนี้หมายถึงตัวแปรที่ประกาศแล้วไม่ได้มีการใช้งานจะมีการแจ้งเตือน
 
 Debug
 1. กดที่รูปแมลง
 2. กด dropdown ด้านบน 
 3. เลือก add configuration
 4. เพิ่ม "preLaunchTask": "tsc: build - tsconfig.json",
+
+
+
+Javascript type
+number
+string
+boolean
+null
+undefined
+object
+
+Typescript type
+any 
+unknown
+nerver
+enum
+tuple

@@ -1,5 +1,9 @@
 
-let age: number = 20;
-if(age < 50){
-    age += 10
-}
+// variable.ts
+// any.ts
+// array.ts
+// enum.ts
+// tuple.ts
+
+
+
