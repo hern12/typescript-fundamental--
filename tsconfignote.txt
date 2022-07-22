@@ -1,0 +1,8 @@
+command tsc --init will generate tsconfig.json
+
+"target": "es2016" // ใช้ตอนที่ code compile typescript ให้เป็น javascript ตาม version ที่กำหนดเพื่อรองรับ browser ต่างๆ (แต่ละ browser มี javascript ที่แตกต่างกัน)
+module ไม่รู้
+rootDir เป็นโฟล์เดอร์ที่จะให้ typescript เข้าไป compile ส่วนมากจะกำหนดให้เป็น src 
+outDir เป็นโฟล์เดอร์ที่จะเก็บ file js หลังจากที่  compile แล้ว ส่วนมากจะกำหนดให้เป็น dist หรือ build
+removeComments จะลบ comment ที่เราเคยใส่ไว้ใน typescript ออกจากไฟล์ js หลังจากที่ compile แล้ว
+noEmitOnError จะไม่ compile js ถ้าเกิดว่ามี error
