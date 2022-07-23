@@ -1,14 +1,14 @@
 type Draggable = {
-    drag: () => void;
-}
+  drag: () => void;
+};
 
 type Resizable = {
-    resize: () => void;
-}
+  resize: () => void;
+};
 
 type UIWidget = Draggable & Resizable;
 
 let textBox: UIWidget = {
-    drag: () => {},
-    resize: () => {}
-}
+  drag: () => {},
+  resize: () => {},
+};
